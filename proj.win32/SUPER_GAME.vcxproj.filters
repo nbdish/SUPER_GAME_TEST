@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{15287D0C-C8EF-3A94-8814-EE8BC373330C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{AF519B03-7375-3E6B-B4E4-2389E0594C8A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{8CD419B3-78C7-3582-BBDE-DF3F7020834E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B3279C89-5590-320A-8CA2-089CA9F03ED7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{B0BCBCF4-127C-3A6D-8600-1F4E9B8ED8C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{15E12DCE-0A2C-3A9F-A5EC-DAD487C12B55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

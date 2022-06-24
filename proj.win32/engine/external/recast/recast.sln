@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakePredefinedTargets", "CMakePredefinedTargets", "{8E2AECA5-45E3-376F-ABED-8DDA22FA4F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{7DAABF44-BF0D-3D32-A6BA-B9564A800703}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6} = {E95D721F-51D8-3342-92BD-184CC11E3BA6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_recast", "ext_recast.vcxproj", "{E95D721F-51D8-3342-92BD-184CC11E3BA6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A}.Release|Win32.ActiveCfg = Release|Win32
+		{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.Debug|Win32.Build.0 = Debug|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.Release|Win32.ActiveCfg = Release|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.Release|Win32.Build.0 = Release|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBA67BEC-200A-315B-9EE1-6CED1DC04D2A} = {8E2AECA5-45E3-376F-ABED-8DDA22FA4F9E}
+		{E95D721F-51D8-3342-92BD-184CC11E3BA6} = {7DAABF44-BF0D-3D32-A6BA-B9564A800703}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B07B42D1-E8FC-3830-8D31-99355A357211}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

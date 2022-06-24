@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\CMakeFiles\13377966ee6085a2d73d544597c9e36a\SYNC_RESOURCE-SUPER_GAME.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\CMakeFiles\SYNC_RESOURCE-SUPER_GAME" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{39751C85-F825-3641-BA7C-30408E076FEB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

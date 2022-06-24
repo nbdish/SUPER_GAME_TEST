@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\external\ConvertUTF\ConvertUTF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\external\ConvertUTF\ConvertUTFWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\external\ConvertUTF\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B3279C89-5590-320A-8CA2-089CA9F03ED7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

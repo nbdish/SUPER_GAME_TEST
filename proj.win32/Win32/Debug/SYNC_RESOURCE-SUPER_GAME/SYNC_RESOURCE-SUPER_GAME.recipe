@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\Debug\SYNC_RESOURCE-SUPER_GAME</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs>
+    <NonRecipeFileRef>
+      <FullPath>C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\ZERO_CHECK.proj</FullPath>
+    </NonRecipeFileRef>
+  </NonRecipeFileRefs>
+</Project>
