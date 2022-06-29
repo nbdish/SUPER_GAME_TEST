@@ -9,12 +9,20 @@ Scene* HelloWorld::createScene()
     auto layer = HelloWorld::create(); // создаем слой сцены
 
     scene->addChild(layer); // добавляем слой как ребенка на сцену
-
+ 
     return scene;
 }
 
+void HelloWorld::update(float delta)
+{
+
+}
+
+
 bool HelloWorld::init()
 {
+    
+
     if (!Layer::init()) // если мы не можем проинициализировать - просто выходим
     {
         return false;
@@ -27,6 +35,11 @@ bool HelloWorld::init()
 
     label->setPosition(cocos2d::Vec2(400, 230)); // рисуем по заданным координатам. По - умолчанию у всех компонентов Cocos - 2dx точка отрисовки находится в середине, не слева сверху!
     this->addChild(label, 1);
+    this->scheduleUpdate(); // Работа Update
     // наконец добавляем метку как ребенка. второй параметр - это z - последовательность
+
     return true;
 }
+
+
+
