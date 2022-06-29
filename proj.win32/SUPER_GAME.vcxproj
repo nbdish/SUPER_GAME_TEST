@@ -816,10 +816,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseNormal.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car\car_down.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car\car_left.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car\car_right.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car\car_up.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_down.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_left.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_right.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_up.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\arial.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep" />
