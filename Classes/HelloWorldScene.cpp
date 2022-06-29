@@ -28,13 +28,16 @@ bool HelloWorld::init()
         return false;
     }
 
-    auto label = Label::createWithSystemFont("Hello Cocos 2dx", "Arial", 48); // создаем метку для вывода текста. 
+   // auto label = Label::createWithSystemFont("Hello Cocos 2dx", "Arial", 48); // создаем метку для вывода текста. 
+   
+  
     auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
     Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
+    auto sprite = Sprite::create("car_right.png");
+    sprite->setPosition(cocos2d::Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2));
 
-
-    label->setPosition(cocos2d::Vec2(400, 230)); // рисуем по заданным координатам. По - умолчанию у всех компонентов Cocos - 2dx точка отрисовки находится в середине, не слева сверху!
-    this->addChild(label, 1);
+    // label->setPosition(cocos2d::Vec2(400, 230)); // рисуем по заданным координатам. По - умолчанию у всех компонентов Cocos - 2dx точка отрисовки находится в середине, не слева сверху!
+    this->addChild(sprite, 0);
     this->scheduleUpdate(); // Работа Update
     // наконец добавляем метку как ребенка. второй параметр - это z - последовательность
 
