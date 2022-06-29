@@ -33,9 +33,6 @@
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
@@ -73,5 +70,10 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{15E12DCE-0A2C-3A9F-A5EC-DAD487C12B55}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\HelloWorld.png">
+      <Filter>Resources\res</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -117,7 +117,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -283,7 +284,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -449,7 +451,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -614,7 +617,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -815,7 +819,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ResourceCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\game.rc" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseNormal.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\arial.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep" />
@@ -882,6 +885,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{FAF59E4E-3F8C-34E0-9C3E-5CC050B0948C}</Project>
       <Name>external</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\HelloWorld.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
