@@ -2,6 +2,7 @@
 
 #include "cocos2d.h"
 
+
 class HelloWorld : public cocos2d::Layer // класс сцены
 {
 public:
@@ -9,13 +10,16 @@ public:
     bool init() override; // метод инициализации
     CREATE_FUNC(HelloWorld); // макрос, который раскрывается и генерирует экземпляр класса подконтрольный GC (GarbageCollector движка cocos-2dx)
     void update(float dt); // инициализация update
+    void moveRandom(cocos2d::Sprite* s); // инициализация moveRandom
     cocos2d::Sprite* carSprite;
-  //  cocos2d::Touch* touch;
+    cocos2d::Sprite* policeCarSprite;
+ 
 
-    bool onTouchBegan(cocos2d::Touch* _touch, cocos2d::Event* event) override; // клик
-    virtual void onTouchEnded(cocos2d::Touch* _touch, cocos2d::Event* event) override; // окончание клика
-    virtual void onTouchMoved(cocos2d::Touch* _touch, cocos2d::Event* event) override; // перемещение с зажатой кнопкой/пальцем
-    virtual void onTouchCancelled(cocos2d::Touch* _touch, cocos2d::Event* event) override; // отпускаем кнопку/палец
+    bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) override; // клик
+    virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) override; // окончание клика
+    virtual void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event) override; // перемещение с зажатой кнопкой/пальцем
+    virtual void onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* event) override; // отпускаем кнопку/пале
 
+    
 };
 

@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameOverScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\AppDelegate.h">
@@ -42,6 +45,9 @@
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_left.png">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_police_right.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_right.png">
       <Filter>Resources</Filter>
     </ClInclude>
@@ -56,6 +62,9 @@
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOverScene.h">
+      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
