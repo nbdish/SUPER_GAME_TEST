@@ -15,8 +15,6 @@ Scene* HelloWorld::createScene()
 }
 
 
-
-
 bool HelloWorld::init()
 {
 
@@ -83,15 +81,6 @@ void HelloWorld::onTouchMoved(Touch* touch, Event* event)
 {
     cocos2d::log("touch moved");// полезный метод: логирует вывод в консоль
     carSprite->setPosition(Vec2(touch->getLocation().x, touch->getLocation().y));
-    
-    Rect rect1 = carSprite->getBoundingBox();
-    Rect rect2 = policeCarSprite->getBoundingBox();
-
-    if (rect1.intersectsRect(rect2))
-    {
-        auto scene = GameOverScene::createScene();
-        Director::getInstance()->pushScene(scene);
-    }
 }
 
 void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
@@ -117,5 +106,12 @@ void HelloWorld::moveRandom(Sprite* s)
 
 void HelloWorld::update(float dt)
 {
+    Rect rect1 = carSprite->getBoundingBox();
+    Rect rect2 = policeCarSprite->getBoundingBox();
 
+    if (rect1.intersectsRect(rect2))
+    {
+        auto scene = GameOverScene::createScene();
+        Director::getInstance()->pushScene(scene);
+    }
 }
