@@ -30,18 +30,18 @@ bool HelloWorld::init()
     auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
     Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
     
-    carSprite = Sprite::create("car_right.png");
-    //carSprite->setPosition(cocos2d::Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2));
+    carSprite = Sprite::create("car.png");
     carSprite->setPosition(cocos2d::Vec2(65, 25));
-    carSprite->setScale(0.45); // Масштабирование спрайта
+    carSprite->setScale(1.75); // Масштабирование спрайта
     this->addChild(carSprite, 0);
     
-    policeCarSprite = Sprite::create("car_police_right.png");
+    policeCarSprite = Sprite::create("car_police.png");
     policeCarSprite->setPosition(cocos2d::Vec2(575, 455));
-    
-    policeCarSprite->setScale(0.45); // Масштабирование спрайта
+    policeCarSprite->setScale(1.75); // Масштабирование спрайта
     this->addChild(policeCarSprite);
-    this->moveRandom(policeCarSprite);
+
+    this->moveRandom(policeCarSprite); // Функция рандомного движения полицейской машины
+
     this->scheduleUpdate(); // Работа Update
 
       // Это лямбда - выражения. Если не знакомы - обязательно ознакомьтесь, очень сильный механизм.
@@ -60,18 +60,6 @@ bool HelloWorld::init()
     };
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
-
-    //_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this); // вторым параметром указывается контрол, принимающий этот ввод
-   
-   /* if (policeCarSprite->getPosition().distance(carSprite->getPosition()) <
-        policeCarSprite->getBoundingBox().size.width / 2 +
-        carSprite->getBoundingBox().size.width / 2)
-    {
-        auto scene = GameOverScene::createScene();
-        Director::getInstance()->pushScene(scene);
-    }*/
-
- 
 
     return true;
 }
@@ -95,6 +83,7 @@ void HelloWorld::onTouchMoved(Touch* touch, Event* event)
 {
     cocos2d::log("touch moved");// полезный метод: логирует вывод в консоль
     carSprite->setPosition(Vec2(touch->getLocation().x, touch->getLocation().y));
+    
     Rect rect1 = carSprite->getBoundingBox();
     Rect rect2 = policeCarSprite->getBoundingBox();
 
@@ -109,8 +98,6 @@ void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 {
     cocos2d::log("touch cancelled");// полезный метод: логирует вывод в консоль
 }
-
-
 
 void HelloWorld::moveRandom(Sprite* s)
 {

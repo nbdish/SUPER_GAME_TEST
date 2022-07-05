@@ -7,14 +7,14 @@
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\GameOverScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\GameOverScene.cpp">
-      <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -22,6 +22,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\GameOverScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.h">
@@ -39,19 +42,10 @@
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_down.png">
+    <ClInclude Include="..\Resources\car_police.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_left.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_police_right.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_right.png">
-      <Filter>Resources</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_up.png">
+    <ClInclude Include="..\Resources\car.png">
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf">
@@ -62,9 +56,6 @@
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\GameOverScene.h">
-      <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

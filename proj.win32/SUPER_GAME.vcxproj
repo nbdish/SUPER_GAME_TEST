@@ -809,24 +809,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\GameOverScene.h" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\AppDelegate.h" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\GameOverScene.h" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.h" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\resource.h" />
-    <ClCompile Include="..\Classes\GameOverScene.cpp" />
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\AppDelegate.cpp" />
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Classes\GameOverScene.cpp" />
     <ClCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\main.cpp" />
     <ResourceCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\game.rc" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseNormal.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_down.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_left.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_police_right.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_right.png" />
-    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_up.png" />
+    <ClInclude Include="..\Resources\car_police.png" />
+    <ClInclude Include="..\Resources\car.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\arial.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep" />
