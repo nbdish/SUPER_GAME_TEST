@@ -117,8 +117,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -284,8 +283,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -451,8 +449,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -617,8 +614,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>												</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/maksi/Desktop/testG/SUPER_GAME/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/maksi/Desktop/testG/SUPER_GAME/proj.win32/bin/SUPER_GAME/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -821,9 +817,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ResourceCompile Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\proj.win32\game.rc" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseNormal.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass01.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass02.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass03.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass04.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass05.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass06.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass07.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass08.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass09.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass10.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass11.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass12.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass13.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass14.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png" />
-    <ClInclude Include="..\Resources\car_police.png" />
-    <ClInclude Include="..\Resources\car.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car1.png" />
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_police1.png" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\arial.ttf" />
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\res\.gitkeep" />

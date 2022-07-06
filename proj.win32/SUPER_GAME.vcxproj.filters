@@ -39,13 +39,55 @@
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\CloseSelected.png">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass01.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass02.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass03.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass04.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass05.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass06.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass07.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass08.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass09.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass10.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass11.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass12.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass13.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\Grass\land_grass14.png">
+      <Filter>Resources\Grass</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\HelloWorld.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="..\Resources\car_police.png">
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car1.png">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="..\Resources\car.png">
+    <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\car_police1.png">
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\maksi\Desktop\testG\SUPER_GAME\Resources\fonts\Marker Felt.ttf">
@@ -69,6 +111,9 @@
   <ItemGroup>
     <Filter Include="Resources">
       <UniqueIdentifier>{15287D0C-C8EF-3A94-8814-EE8BC373330C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Grass">
+      <UniqueIdentifier>{4B1A0DED-55E0-3840-A03E-9A03DC08135D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\fonts">
       <UniqueIdentifier>{AF519B03-7375-3E6B-B4E4-2389E0594C8A}</UniqueIdentifier>

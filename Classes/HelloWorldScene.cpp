@@ -1,5 +1,6 @@
 ﻿#include "HelloWorldScene.h"
 #include "GameOverScene.h"
+#include <cmath>  
 
 USING_NS_CC; // макрос использования пространства имён cocos2d::
 
@@ -22,21 +23,25 @@ bool HelloWorld::init()
     {
         return false;
     }
-
+    
     auto touchListener = EventListenerTouchOneByOne::create();
 
     auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
     Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
     
-    carSprite = Sprite::create("car.png");
+    backGround->setPosition(cocos2d::Vec2(visibleSize.width/2, visibleSize.height/2));
+    this->addChild(backGround, 0);
+    backGround->setScale(7.25);
+
+    //carSprite = Sprite::create("car1.png");
     carSprite->setPosition(cocos2d::Vec2(65, 25));
-    carSprite->setScale(1.75); // Масштабирование спрайта
-    this->addChild(carSprite, 0);
+    carSprite->setScale(1); // Масштабирование спрайта
+    this->addChild(carSprite, 1);
     
-    policeCarSprite = Sprite::create("car_police.png");
+    //policeCarSprite = Sprite::create("car_police1.png");
     policeCarSprite->setPosition(cocos2d::Vec2(575, 455));
-    policeCarSprite->setScale(1.75); // Масштабирование спрайта
-    this->addChild(policeCarSprite);
+    policeCarSprite->setScale(1); // Масштабирование спрайта
+    this->addChild(policeCarSprite, 1);
 
     this->moveRandom(policeCarSprite); // Функция рандомного движения полицейской машины
 
@@ -65,10 +70,10 @@ bool HelloWorld::init()
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
 {
-    touch->getLocation(); // место нажатия
+    Point p =  touch->getLocation(); // место нажатия
     event->getCurrentTarget(); // на какой контрол мы кликнули, его адрес.
     event->getCurrentTarget()->getBoundingBox(); // ограничивающий бокс вокруг контрола
-    carSprite->setPosition(Vec2(touch->getLocation().x, touch->getLocation().y));
+    
     return true;
 }
 
@@ -79,7 +84,8 @@ void HelloWorld::onTouchEnded(Touch* touch, Event* event)
 
 void HelloWorld::onTouchMoved(Touch* touch, Event* event)
 {
-    cocos2d::log("touch moved");// полезный метод: логирует вывод в консоль
+    Point p = touch->getLocation(); // место нажатия
+    carSprite->setRotation(atan2((p.y - carSprite->getPositionY()), (p.x - carSprite->getPositionX())) * 180 / 3.1415926); // Поворот спрайта вслед за курсором
     carSprite->setPosition(Vec2(touch->getLocation().x, touch->getLocation().y));
 }
 
@@ -87,6 +93,7 @@ void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 {
     cocos2d::log("touch cancelled");// полезный метод: логирует вывод в консоль
 }
+
 
 void HelloWorld::moveRandom(Sprite* s)
 {
