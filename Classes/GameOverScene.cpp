@@ -21,7 +21,7 @@ bool GameOverScene::init()
     auto label = Label::createWithSystemFont("GameOver", "Arial", 48); // создаем метку для вывода текста. 
     auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
     Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
-    label->setPosition(cocos2d::Vec2(320, 240)); // рисуем по заданным координатам. По - умолчанию у всех компонентов Cocos - 2dx точка отрисовки находится в середине, не слева сверху!
+    label->setPosition(cocos2d::Vec2(visibleSize.width/2, visibleSize.height/2)); // рисуем по заданным координатам. По - умолчанию у всех компонентов Cocos - 2dx точка отрисовки находится в середине, не слева сверху!
     this->addChild(label, 1);
     // наконец добавляем метку как ребенка. второй параметр - это z - последовательность
     return true;

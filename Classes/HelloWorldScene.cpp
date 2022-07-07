@@ -23,30 +23,16 @@ bool HelloWorld::init()
     {
         return false;
     }
-    
-    auto touchListener = EventListenerTouchOneByOne::create();
-
-    auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
-    Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
-    
-    backGround->setPosition(cocos2d::Vec2(visibleSize.width/2, visibleSize.height/2));
-    this->addChild(backGround, 0);
-    backGround->setScale(7.25);
-
-    //carSprite = Sprite::create("car1.png");
-    carSprite->setPosition(cocos2d::Vec2(65, 25));
-    carSprite->setScale(1); // Масштабирование спрайта
-    this->addChild(carSprite, 1);
-    
-    //policeCarSprite = Sprite::create("car_police1.png");
-    policeCarSprite->setPosition(cocos2d::Vec2(575, 455));
-    policeCarSprite->setScale(1); // Масштабирование спрайта
-    this->addChild(policeCarSprite, 1);
-
-    this->moveRandom(policeCarSprite); // Функция рандомного движения полицейской машины
 
     this->scheduleUpdate(); // Работа Update
+        
+    spawnSprite(backGround, 0, 7.25);
+    spawnSprite(carSprite, 1, 1,65,25);
+    spawnSprite(ball, 1, 5,575,455);
 
+    this->moveRandom(ball); // Функция рандомного движения полицейской машины
+
+    auto touchListener = EventListenerTouchOneByOne::create();
       // Это лямбда - выражения. Если не знакомы - обязательно ознакомьтесь, очень сильный механизм.
     touchListener->onTouchBegan = [this](Touch* _touch, Event* event) -> bool {
         return onTouchBegan(_touch, event);
@@ -85,7 +71,7 @@ void HelloWorld::onTouchEnded(Touch* touch, Event* event)
 void HelloWorld::onTouchMoved(Touch* touch, Event* event)
 {
     Point p = touch->getLocation(); // место нажатия
-    carSprite->setRotation(atan2((p.y - carSprite->getPositionY()), (p.x - carSprite->getPositionX())) * 180 / 3.1415926); // Поворот спрайта вслед за курсором
+    carSprite->setRotation(atan2((p.y - carSprite->getPositionY()), (p.x - carSprite->getPositionX())) * -180 / 3.1415926); // Поворот спрайта вслед за курсором
     carSprite->setPosition(Vec2(touch->getLocation().x, touch->getLocation().y));
 }
 
@@ -114,11 +100,29 @@ void HelloWorld::moveRandom(Sprite* s)
 void HelloWorld::update(float dt)
 {
     Rect rect1 = carSprite->getBoundingBox();
-    Rect rect2 = policeCarSprite->getBoundingBox();
+    Rect rect2 = ball->getBoundingBox();
 
     if (rect1.intersectsRect(rect2))
     {
         auto scene = GameOverScene::createScene();
         Director::getInstance()->pushScene(scene);
     }
+
+}
+
+void HelloWorld::spawnSprite(Sprite* s, int layer, double scale)
+{
+    auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
+    Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
+
+    s->setPosition(cocos2d::Vec2(visibleSize.width / 2, visibleSize.height / 2));
+    this->addChild(s, layer);
+    s->setScale(scale);
+}
+
+void HelloWorld::spawnSprite(Sprite* s, int layer, double scale, int x,int y)
+{
+    s->setPosition(cocos2d::Vec2(x, y));
+    this->addChild(s, layer);
+    s->setScale(scale);
 }
