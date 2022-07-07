@@ -11,7 +11,8 @@ Scene* HelloWorld::createScene()
     auto layer = HelloWorld::create(); // создаем слой сцены
 
     scene->addChild(layer); // добавляем слой как ребенка на сцену
- 
+   
+
     return scene;
 }
 
@@ -23,14 +24,15 @@ bool HelloWorld::init()
     {
         return false;
     }
-
+    LayerColor* _bgColor = LayerColor::create(Color4B(50, 50, 100, 250));
+    this->addChild(_bgColor, -10);
+    
     this->scheduleUpdate(); // Работа Update
         
-    spawnSprite(backGround, 0, 7.25);
-    spawnSprite(carSprite, 1, 1,65,25);
-    spawnSprite(ball, 1, 5,575,455);
+    spawnSprite(carSprite, 1, 1, 65, 25);
+    spawnSprite(ball, 1, 7, 575, 455);
 
-    this->moveRandom(ball); // Функция рандомного движения полицейской машины
+    this->moveRandom(ball); // Функция рандомного движения шара
 
     auto touchListener = EventListenerTouchOneByOne::create();
       // Это лямбда - выражения. Если не знакомы - обязательно ознакомьтесь, очень сильный механизм.
@@ -42,7 +44,6 @@ bool HelloWorld::init()
     };
     touchListener->onTouchMoved = [this](Touch* _touch, Event* event) {
         onTouchMoved(_touch, event);
-       
     };
     touchListener->onTouchCancelled = [this](Touch* _touch, Event* event) {
         onTouchCancelled(_touch, event);
@@ -53,6 +54,17 @@ bool HelloWorld::init()
     return true;
 }
 
+void HelloWorld::update(float dt)
+{
+    Rect rect1 = carSprite->getBoundingBox();
+    Rect rect2 = ball->getBoundingBox();
+
+    if (rect1.intersectsRect(rect2))
+    {
+        auto scene = GameOverScene::createScene();
+        Director::getInstance()->pushScene(scene);
+    }
+}
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
 {
@@ -83,7 +95,8 @@ void HelloWorld::onTouchCancelled(Touch* touch, Event* event)
 
 void HelloWorld::moveRandom(Sprite* s)
 {
-    auto randomPoint = Vec2(rand() % 480, rand() % 320);
+    auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
+    auto randomPoint = Vec2(rand() % (int)visibleSize.width, rand() % (int)visibleSize.height);
 
     auto moveTo = MoveTo::create(rand() % 5 + 1, randomPoint);
     auto delayTime = DelayTime::create(0.5);
@@ -97,28 +110,6 @@ void HelloWorld::moveRandom(Sprite* s)
     s->runAction(actions);
 }
 
-void HelloWorld::update(float dt)
-{
-    Rect rect1 = carSprite->getBoundingBox();
-    Rect rect2 = ball->getBoundingBox();
-
-    if (rect1.intersectsRect(rect2))
-    {
-        auto scene = GameOverScene::createScene();
-        Director::getInstance()->pushScene(scene);
-    }
-
-}
-
-void HelloWorld::spawnSprite(Sprite* s, int layer, double scale)
-{
-    auto visibleSize = Director::getInstance()->getVisibleSize(); // получаем размеры вида просмотра (то, где будем рисовать)
-    Vec2 origin = Director::getInstance()->getVisibleOrigin(); // получаем вектор смещения, для рисования на разных координатах
-
-    s->setPosition(cocos2d::Vec2(visibleSize.width / 2, visibleSize.height / 2));
-    this->addChild(s, layer);
-    s->setScale(scale);
-}
 
 void HelloWorld::spawnSprite(Sprite* s, int layer, double scale, int x,int y)
 {
